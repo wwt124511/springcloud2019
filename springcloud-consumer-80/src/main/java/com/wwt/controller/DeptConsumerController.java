@@ -8,7 +8,9 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class DeptConsumerController {
 
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    //private static final String REST_URL_PREFIX = "http://localhost:8001";
+    //通过Ribbon方式访问，从eureka注册中心获取服务
+    private static final String REST_URL_PREFIX = "http://PROVIDER-8001";
 
     @Autowired
     private RestTemplate restTemplate;
