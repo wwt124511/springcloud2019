@@ -10,24 +10,24 @@ import org.springframework.web.client.RestTemplate;
 public class DeptConsumerController {
 
     //通过Ribbon方式访问，从eureka注册中心获取服务
-    private static final String REST_URL_PREFIX = "http://PROVIDER-8001";
+    private static final String REST_URL_PREFIX = "http://PROVIDER-DEPT";
 
     @Autowired
     private RestTemplate restTemplate;
 
-    @RequestMapping(value = "/consumer/dept/add")
+    @RequestMapping(value = "/ribbon/dept/add")
     public String add()
     {
         return restTemplate.getForObject(REST_URL_PREFIX + "/dept/add", String.class);
     }
 
-    @RequestMapping(value = "/consumer/dept/get")
+    @RequestMapping(value = "/ribbon/dept/get")
     public String get()
     {
         return restTemplate.getForObject(REST_URL_PREFIX + "/dept/get/", String.class);
     }
 
-    @RequestMapping(value = "/consumer/dept/list")
+    @RequestMapping(value = "/ribbon/dept/list")
     public String list()
     {
         return restTemplate.getForObject(REST_URL_PREFIX + "/dept/list", String.class);
