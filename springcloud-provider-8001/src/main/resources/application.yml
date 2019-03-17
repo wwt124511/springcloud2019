@@ -5,8 +5,8 @@ eureka:
   service-url:
    defaultZone: http://localhost:7001/eureka
  instance:
-  instance-id: microservicecloud-dept8001  #自定义服务名称信息
-  prefer-ip-address: true  #访问路径可以显示IP地址
+  #instance-id: microservicecloud-dept8001  #自定义服务名称信息
+  #prefer-ip-address: true  #访问路径可以显示IP地址
 spring:
  application:
   name: provider-dept
