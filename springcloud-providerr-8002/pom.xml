@@ -9,9 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-provider-8001</artifactId>
-
-    <name>springcloud-provider-8001</name>
+    <artifactId>springcloud-providerr-8002</artifactId>
+    <name>springcloud-providerr-8002</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -67,5 +66,4 @@
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
     </dependencies>
-
 </project>

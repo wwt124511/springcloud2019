@@ -15,6 +15,7 @@
         <module>springcloud-provider-hystrix-8001</module>
         <module>springcloud-consumer-ribbon-80</module>
         <module>springcloud-consumer-feign-80</module>
+        <module>springcloud-providerr-8002</module>
     </modules>
     <packaging>pom</packaging>
 
